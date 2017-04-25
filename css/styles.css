@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+@import url(../fonts/286113f7f49cc7f348402a12c2419ed9);
+@font-face {
+    font-family: "Tw Cen MT";
+    src: url("../fonts/286113f7f49cc7f348402a12c2419ed9.eot");
+    src: url("../fonts/286113f7f49cc7f348402a12c2419ed9.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/286113f7f49cc7f348402a12c2419ed9.woff2") format("woff2"),
+    url("../fonts/286113f7f49cc7f348402a12c2419ed9.woff") format("woff"),
+    url("../fonts/286113f7f49cc7f348402a12c2419ed9.ttf") format("truetype"),
+    url("../fonts/286113f7f49cc7f348402a12c2419ed9.svg#Tw Cen MT") format("svg");
+}
+
+
+body {
+	font-family: "Tw Cen MT";
+}
+
+h3 {
+	color: white;
+	margin-top: 10vh;
+}	
+
+ul {
+	margin: 0;
+	padding: 0; 
+}
+
+
+a {
+	color: #a6a6a6;
+}
+
+
+a:hover, a:focus, a:active {
+	text-decoration: none;
+	color: #555555;
+}
+
+h2 {
+	color: #707070;
+	font-size: 10vh;
+	text-align: left;
+}
+
+/*============*/
+/*====HOME====*/
+#section0{
+	background-image: url(../imgs/homeBackground.jpg);
+}
+
+#section1 {
+	background-color: #dcd9db;
+	padding: 3vh 0 0 0;
+}
+
+#section1  h2 {
+	margin-bottom: 7vh;
+	padding-top: 10vh;
+}
+
+#section1 p {
+	font-size: 5.5vh;
+	text-align: left;
+	line-height: 1;
+	margin-top: 7vh;
+}
+
+/* ABOUT US STYLES */
+
+
+#logo {
+    width: 35vw;
+    height: auto;
+    opacity: 0.8;
+    margin-top: 15vh;
+    color: white;
+    z-index: 100;
+    margin-bottom: 5vh;
+}
+
+/* MENU STYLES */
+#menu-button {
+	position: fixed;
+	top:0;
+	right: 0;
+    width: 15vh;
+    height: 13vh;
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 3vh;
+    padding-left: 3vh;
+    background-color: black;
+    z-index:102;
+}
+
+#mainMenuContainer{
+	position: fixed;
+	left:-100vw;
+	width: 100vw;
+	height: 100vh;
+	background-color: #ffffff;
+	z-index: 101;
+	padding-top: 10vh;
+}
+
+#mainMenu li{
+	text-align: center;
+	width: 30vw;
+	list-style-type: none;
+	font-size: 6vh;
+	border-bottom: 0.4vh solid #555555;
+	margin: auto;
+	color: #a6a6a6;
+}
+
+#mainMenu li:hover {
+	cursor: pointer;
+}
+#bookYourStay {
+	border-bottom: none;
+	background-color: #464646;
+}
+
+#logoBlack {
+	background-image: url("../imgs/LOGO_black.png");
+	background-size: cover;
+   	width: 30vw;
+    height: 24vw;
+	border-bottom: #ffffff;
+	margin: auto;
+  	margin-bottom: 5vh;
+}
+/* END MENU STYLES */
+
+/* ABOUT SECTION STYLES */
+#aboutUsText {
+	position: relative;
+	width: 80vw;
+	margin: auto;
+}
+
+#map {
+	position: absolute;
+	height: 84vh;
+	width: 84vh;
+	background-size: cover;
+	background-image: url("../imgs/map.png");
+}
+
+#learnMore {
+	position: absolute;
+	bottom: -10vh;
+	right: 0;
+	font-size: 5vh;
+	color: #a6a6a6;
+}
+
+#learnMore span {
+	color: black;
+}
+/* END ABOUT SECTION STYLES */
+
+
+/* APARTMENTS SECTIONS STYLES */
+
+#apSection1 h2 {
+	padding-top: 4vh;
+	text-align: left;
+	font-size: 12vh;
+}
+
+#apSection1 h3 {
+	color: black;
+	margin: 0 !important;
+	margin-top: -2vh;
+	font-size: 5vh;
+}
+
+.apSection {
+	background-color: #dcd9db;
+	padding: 0 5vw;
+}
+
+.apartPicAndButtonContainer {
+	position: relative;
+	width: 90vw;
+	height: 76vh;
+	background-size: cover;
+    background-position-y: -9vh;
+    background-repeat: no-repeat;
+}
+
+.buttons {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 10vh;
+	width: 90vw;
+}
+
+.apSection .bookNow, .stepIn {
+	width: 45vw;
+	float: left;
+	font-size: 5vh;
+	padding: 2.6vh 0;	
+}
+
+.bookNow {
+	color: white;
+	background-color: #707070;
+}
+
+.stepIn {
+	color: #707070;
+	background-color:white;
+}
+
+.apartmentText {
+	position: absolute;
+    left: 7vw;
+    bottom: 13vh;
+    font-size: 6vh;
+	color: #dcd9db;
+}
+
+.apartmentText p {
+	text-align: left;
+	font-size: 4vh;
+}
+
+.stepInTextContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: 66vh;
+	/* background-color: black; */
+}
+
+/* END APARTMENTS SECTION STYLES */
+
+
+/* Menu button bars styling */
+.bar1, .bar2, .bar3 {
+    /*width: 35px;
+    height: 5px;*/
+    width: 9vh;
+    height: 0.4vh;
+    background-color: #8d8d8d;
+    margin: 1.4vh 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-1.9vh, 1.8vh) ;
+    transform: rotate(-45deg) translate(-1.9vh, 1.8vh) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-0.8vh, -0.8vh) ;
+    transform: rotate(45deg) translate(-0.8vh, -0.8vh);
+}
+/* END MENU BARS BUTTON STYLES */
+
+/* APP SECTION STYLES */
+
+
+/* 	SWIPER SLIDER STYLES */
+.swiper-container {
+    width: 90vw;
+    height: 66vh;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+

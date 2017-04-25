@@ -1,0 +1,41 @@
+.menuSlideIn {
+
+}
+
+.menuSlideOut {
+
+}
+
+@keyframes slidingOut {
+  from {
+    left:0;
+  }
+  to {
+    left:-100vw;
+  }
+}
+
+@keyframes slidingIn {
+  from {
+    left:-100vw;
+  }
+  to {
+    left:0;
+  }
+}
+
+.slideIn {
+  -webkit-animation: slidingIn 0.5s linear 1;
+  -moz-animation: slidingIn 0.5s linear 1;
+  -ms-animation: slidingIn 0.5s linear 1;
+  -o-animation: slidingIn 0.5s linear 1;
+  animation: slidingIn 0.5s linear 1;
+}
+
+.slideOut {
+  -webkit-animation: slidingOut 0.5s linear 1;
+  -moz-animation: slidingOut 0.5s linear 1;
+  -ms-animation: slidingOut 0.5s linear 1;
+  -o-animation: slidingOut 0.5s linear 1;
+  animation: slidingOut 0.5s linear 1;
+}

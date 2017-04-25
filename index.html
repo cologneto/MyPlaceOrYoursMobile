@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Background images - fullPage.js</title>
+	<meta name="author" content="Georgi Tsanev" />
+	<meta name="description" content="My place or yours" />
+	<meta name="keywords"  content="apartments,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animateMobile.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	
+	
+	#section2{
+		background-image: url(imgs/bg3.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3{
+		background-image: url(imgs/bg4.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3 h1{
+		color: #000;
+	}
+
+
+	
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
+
+	
+
+</head>
+<body>
+<div id="menu-button" class="blackBackground" onclick="showHideMenuNavigation(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+</div>
+<div id="mainMenuContainer" class="">
+	<div id="logoBlack"></div>
+	<ul id="mainMenu">
+		<li data-menuanchor="firstPage"><a href="#firstPage">HOME</a></li>
+		<li data-menuanchor="secondPage"><a href="#secondPage">ABOUT</a></li>
+		<li data-menuanchor="3rdPage"><a href="#3rdPage">OUR APARTMENTS</a></li>
+		<li data-menuanchor="4thpage"><a href="#4thpage">HOW TO FIND US?</a></li>
+		<li id="bookYourStay">BOOK YOUR STAY!</li>
+	</ul>
+</div>
+<!-- <a href="https://github.com/alvarotrigo/fullPage.js" id="githubLink"><img style="position: fixed;z-index:99; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a> -->
+
+<div id="fullpage">
+	<div class="section " id="section0">
+	<!-- style="margin-bottom: 4vh;"
+		<div style="position: absolute;bottom: -2vh;left: 0;width: 100vw;height: 2vh;background-color: red;"></div> -->
+		<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+			<img id="logo" src="imgs/logo.png" alt="logo_fatWhite">
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+			<h3>WELCOME TO BUDAPEST</h3>
+		</div>
+	</div>
+	<div class="section" id="section1">
+		<div id="aboutUsText"> 
+			<div id="map"></div>
+			<h2>My Place or Yours?</h2>
+			<p>That is the question. Wanna come up to me? Of prefer to stay at home? That's boring, don't do that. You are coming to an exciting city like Budapest, so come up to mine, and stay at a cool place.</p>
+			<br>
+			<p>My place - or hopefully yours - is a set of apartments in the heart of Budapest, a short walk to the most interesting sights and things to do here. </p>
+			<div id="learnMore"><span>></span>  LEARN MORE</div>
+		</div>
+	</div>
+	<div class="section apSection" id="apSection1">
+		<h2>Our apartments</h2>
+		<h3>Comfort & visual satisfaction</h3>
+		<div class="apartPicAndButtonContainer">
+			<div class="buttons">
+				<div class="bookNow">Book NOW!</div>
+				<div class="stepIn">Step in >></div>
+				<div class="apartmentText">
+					<span>Family Apartment</span>
+					<p>15 Puskin  Str.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section apSection" id="apSection2">
+		<div class="apartPicAndButtonContainer">
+			<div class="buttons">
+				<div class="bookNow">Book NOW!</div>
+				<div class="stepIn">Step in >></div>
+			</div>
+			<div class="apartmentText">
+				<span>Studio Apartments</span>
+				<p>15 Puskin  Str.</p>
+			</div>
+		</div>
+	</div>
+	<div class="section apSection" id="apSection3">
+		<div class="apartPicAndButtonContainer">
+			<div class="buttons">
+				<div class="bookNow">Book NOW!</div>
+				<div class="stepIn">Step in >></div>
+			</div>
+			<div class="apartmentText">
+				<span>Studio Apartments</span>
+				<p>17 Puskin  Str.</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
+</div>
+
+
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	
+
+</body>
+</html>
