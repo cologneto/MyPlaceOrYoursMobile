@@ -12,12 +12,14 @@
   }
   to {
     left:-100vw;
+    content: 'viewport-units-buggyfill;  left:-100vw;';
   }
 }
 
 @keyframes slidingIn {
   from {
     left:-100vw;
+    content: 'viewport-units-buggyfill;  left:-100vw;';
   }
   to {
     left:0;

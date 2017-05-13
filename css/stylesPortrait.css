@@ -2,6 +2,12 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@media screen and (max-width: 600px) {
+   
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -93,10 +99,12 @@ a:hover, a:focus, a:active {
 
 h2 {
 	color: #707070;
-	font-size: 10vh;
+	font-size: 5.8vh;
+	font-weight: bold;
 	text-align: left;
-	content: 'viewport-units-buggyfill; font-size: 10vh;';
+	content: 'viewport-units-buggyfill; font-size: 5.8vh;';
 }
+
 img {
   content: normal !important;
 }
@@ -107,6 +115,10 @@ img {
 	background-image: url(../imgs/homeBackground.jpg);
 }
 
+#section0 h3 {
+	margin-top: 0;
+}
+
 #section1 {
 	background-color: #dcd9db;
 	padding: 3vh 0 0 0;
@@ -114,47 +126,48 @@ img {
 }
 
 #section1  h2 {
-	margin-bottom: 7vh;
-	padding-top: 10vh;
-	content: 'viewport-units-buggyfill; margin-bottom: 7vh; padding-top: 10vh;';
+    margin-bottom: 7vh;
+    padding-top: 24vh;
+	content: 'viewport-units-buggyfill; margin-bottom: 7vh; padding-top: 24vh;';
 }
 
 #section1 p {
-	font-size: 5.5vh;
-	text-align: left;
-	line-height: 1;
-	margin-top: 7vh;
-	content: 'viewport-units-buggyfill; font-size: 5.5vh; margin-top: 7vh;';
+	font-size: 2.8vh;
+    text-align: left;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1;
+    margin-top: 2vh;
+	content: 'viewport-units-buggyfill; font-size: 2.8vh; margin-top: 2vh;';
 }
 
 /* ABOUT US STYLES */
 
 
 #logo {
-    width: 35vw;
+    width: 60vw;
     height: auto;
     opacity: 0.8;
-    margin-top: 15vh;
+    margin-top: 55vh;
     color: white;
     z-index: 100;
-    margin-bottom: 5vh;
-    content: 'viewport-units-buggyfill; width: 35vw; margin-top: 15vh; margin-bottom: 5vh;';
+    content: 'viewport-units-buggyfill; width: 60vw; margin-top: 55vh; margin-bottom: 5vh;';
 }
 
 /* MENU STYLES */
 #menu-button {
 	position: fixed;
-	top:0;
-	right: 0;
-    width: 15vh;
-    height: 13vh;
+    top: 0;
+    right: 0;
+    width: 10vh;
+    height: 10vh;
     display: inline-block;
     cursor: pointer;
-    padding-top: 3vh;
-    padding-left: 3vh;
+    padding-top: 2.6vh;
+    padding-left: 2vh;
     background-color: black;
     z-index:102;
-    content: 'viewport-units-buggyfill; width: 15vh;  height: 13vh; padding-top: 3vh; padding-left: 3vh;';
+    content: 'viewport-units-buggyfill; width: 10vh;  height: 10vh; padding-top: 2.6vh; padding-left: 2vh;';
 }
 
 #mainMenuContainer{
@@ -170,13 +183,14 @@ img {
 
 #mainMenu li{
 	text-align: center;
-	width: 30vw;
+	width: 55vw;
 	list-style-type: none;
-	font-size: 6vh;
+	font-size: 3vh;
 	border-bottom: 0.4vh solid #555555;
 	margin: auto;
 	color: #a6a6a6;
-	content: 'viewport-units-buggyfill; width: 30vw; font-size: 6vh; border-bottom: 0.4vh solid #555555;';
+	padding: 5vw;
+	content: 'viewport-units-buggyfill; width: 55vw; font-size: 3vh; padding: 5vw; border-bottom: 0.4vh solid #555555;';
 }
 
 #mainMenu li:hover {
@@ -184,19 +198,21 @@ img {
 }
 
 #bookYourStay {
+	padding-top: 2vh !important;
 	border-bottom: none;
 	background-color: #464646;
+	content: 'viewport-units-buggyfill; padding-top: 2vh !important;';
 }
 
 #logoBlack {
-	background-image: url("../imgs/LOGO_black.png");
-	background-size: cover;
-   	width: 30vw;
-    height: 24vw;
-	border-bottom: #ffffff;
-	margin: auto;
-  	margin-bottom: 5vh;
-  	content: 'viewport-units-buggyfill; width: 30vw; height: 24vw; margin-bottom: 5vh;';
+    background-image: url(../imgs/LOGO_black.png);
+    background-size: cover;
+    width: 54vw;
+    height: 24vh;
+    border-bottom: #ffffff;
+    margin: auto;
+    margin-bottom: 5vh;
+  	content: 'viewport-units-buggyfill; width: 54vw; height: 24vw; margin-bottom: 5vh;';
 }
 /* END MENU STYLES */
 
@@ -209,21 +225,23 @@ img {
 }
 
 #map, .map {
-	position: absolute;
-	height: 84vh;
-	width: 84vh;
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: -5vw;
+    height: 90vw;
+    width: 90vw;
 	background-size: cover;
 	background-image: url("../imgs/map.png");
-	content: 'viewport-units-buggyfill; height: 84vh; width: 84vh;';
+	content: 'viewport-units-buggyfill;  height: 90vw; width: 90vw; margin-left: -5vw; margin-top: 20vh;';
 }
 
 #learnMore {
 	position: absolute;
 	bottom: -10vh;
 	right: 0;
-	font-size: 5vh;
+    font-size: 3vh;
 	color: #a6a6a6;
-	content: 'viewport-units-buggyfill; bottom: -10vh; font-size: 5vh;';
+	content: 'viewport-units-buggyfill; bottom: -10vh; font-size: 3vh;';
 }
 
 #learnMore span {
@@ -243,10 +261,10 @@ img {
 /* APARTMENTS SECTIONS STYLES */
 
 #apSection1 h2, #howToFindUs h2 {
-	padding-top: 4vh;
-	text-align: left;
-	font-size: 12vh;
-	content: 'viewport-units-buggyfill; padding-top: 4vh; font-size: 12vh;';
+    padding-top: 18vh;
+    text-align: center;
+    font-size: 5vh;
+	content: 'viewport-units-buggyfill; padding-top: 18vh; font-size: 5vh;';
 }
 
 #apSection1 h3, #howToFindUs h3 {
@@ -259,40 +277,40 @@ img {
 
 .apSection {
 	background-color: #dcd9db;
-	padding: 0 5vw;
-	content: 'viewport-units-buggyfill; padding: 0 5vw;';
+	padding: 0 2.5vw !important;
+	content: 'viewport-units-buggyfill; padding: 0 2.5vw !important;';
 }
 
 .apartPicAndButtonContainer, .mapContainer {
-	position: relative;
-	width: 90vw;
-	height: 76vh;
-	background-size: 100% 100%;
-    /* background-position-y: -9vh; */
+    position: relative;
+    width: 95vw;
+    height: 40vh;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    content: 'viewport-units-buggyfill; width: 90vw; height: 76vh;';
+    content: 'viewport-units-buggyfill; width: 95vw; height: 40vh;';
 }
 
 .buttons {
 	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 10vh;
-	width: 90vw;
-	content: 'viewport-units-buggyfill; height: 10vh; width: 90vw;';
+    bottom: -6vh;
+    left: 0;
+    height: 5vh;
+    width: 95vw;
+	content: 'viewport-units-buggyfill; height: 5vh; width: 95vw; bottom: -6vh;';
 }
 
 .apSection .bookNow, .stepIn {
-	width: 45vw;
+	width: 47.5vw;
 	float: left;
-	font-size: 5vh;
-	padding: 2.6vh 0;
-	content: 'viewport-units-buggyfill; width: 45vw; font-size: 5vh; padding: 2.6vh 0;';	
+	font-size: 3vh;
+	padding: 1vh 0;
+	content: 'viewport-units-buggyfill; width: 45vw; font-size: 3vh; padding: 1vh 0;';	
 }
 
 .bookNow {
 	color: white;
 	background-color: #707070;
+	float: left;
 }
 
 .stepIn {
@@ -302,17 +320,19 @@ img {
 
 .apartmentText {
 	position: absolute;
-    left: 7vw;
-    bottom: 13vh;
-    font-size: 6vh;
+    left: 4vw;
+    bottom: 7vh;
+    font-size: 4vh;
+    font-weight: bold;
 	color: #dcd9db;
-	content: 'viewport-units-buggyfill; left: 7vw; bottom: 13vh; font-size: 6vh;';	
+	content: 'viewport-units-buggyfill; left: 4vw; bottom: 7vh; font-size: 4vh;';	
 }
 
 .apartmentText p {
 	text-align: left;
-	font-size: 4vh;
-	content: 'viewport-units-buggyfill; font-size: 4vh;';
+	font-weight: normal;
+	font-size: 3vh;
+	content: 'viewport-units-buggyfill; font-size: 3vh;';
 }
 
 .stepInTextContainer {
@@ -332,14 +352,14 @@ img {
 .bar1, .bar2, .bar3 {
     /*width: 35px;
     height: 5px;*/
-    width: 9vh;
-    height: 0.4vh;
+    width: 6vh;
+    height: 0.3vh;
     background-color: #8d8d8d;
-    margin: 1.4vh 0;
+    margin: 1vh 0;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-    content: 'viewport-units-buggyfill;  width: 9vh; height: 0.4vh;  margin: 1.4vh 0;';
+    content: 'viewport-units-buggyfill;  width: 6vh; height: 0.3vh;  margin: 1vh 0;';
 }
 
 .change .bar1 {
@@ -562,4 +582,5 @@ img {
 .textSlider p {
 	font-size: 3.5vh;
 	content: 'viewport-units-buggyfill; font-size: 3.5vh;';
+}
 }
